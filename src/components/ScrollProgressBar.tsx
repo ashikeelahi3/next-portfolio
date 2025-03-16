@@ -33,7 +33,11 @@ export default function ScrollProgressBar() {
   useEffect(() => {
     // Hide default scrollbars
     document.documentElement.style.scrollbarWidth = 'none'; // Firefox
-    (document.documentElement.style as any).msOverflowStyle = 'none'; // IE/Edge
+    // Define type for MS-specific CSS properties
+    interface MSStyleExtension extends CSSStyleDeclaration {
+      msOverflowStyle: string;
+    }
+    (document.documentElement.style as MSStyleExtension).msOverflowStyle = 'none'; // IE/Edge
 
     // Hide webkit scrollbar
     const style = document.createElement('style');
@@ -61,7 +65,7 @@ export default function ScrollProgressBar() {
     return () => {
       // Cleanup
       document.documentElement.style.scrollbarWidth = '';
-      (document.documentElement.style as any).msOverflowStyle = '';
+      (document.documentElement.style as MSStyleExtension).msOverflowStyle = '';
       if (document.head.contains(style)) {
         document.head.removeChild(style);
       }

@@ -7,14 +7,14 @@ import { Section } from '@/components/Section';
 import { EducationItem } from '@/components/Education';
 import { SkillCategory } from '@/components/Skills';
 import { Project } from '@/components/Project';
-import { Experience } from '@/components/Experience';
+// import { Experience } from '@/components/Experience';
 import { Footer } from '@/components/Footer';
 import { 
   UserCircleIcon, 
   AcademicCapIcon, 
   CodeBracketIcon, 
-  CommandLineIcon,
-  BriefcaseIcon
+  CommandLineIcon
+  // BriefcaseIcon
 } from '@/components/Icons';
 import { 
   personalInfo, 
