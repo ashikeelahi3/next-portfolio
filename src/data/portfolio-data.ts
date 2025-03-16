@@ -64,6 +64,12 @@ export const skills = [
 
 export const projects = [
   {
+    title: "VegitHat Website",
+    tech: "NextJS · Tailwind CSS · Clerk · Supabase ",
+    description: "VegieHat is a digital platform designed to empower communities in Bangladesh by enabling everyday people to monitor and report real-time food and vegetable prices. ",
+    link: "https://github.com/ashikeelahi3/vegiehat-nextJS"
+  },
+  {
     title: "VegitHat Analysis",
     tech: "HTML · CSS · JavaScript · Web R",
     description: "VegieHat Data Analysis is a web-based tool designed to process and analyze data related to the VegieHat project. It appears to provide a user-friendly interface where users can upload files, process data, and download the results. The platform likely utilizes WebR for statistical analysis and computations.",
