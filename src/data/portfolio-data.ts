@@ -108,8 +108,19 @@ export const projects = [
 ];
 
 // Uncomment if you want to add experience section
-/*
+
 export const experience = [
+{
+    position: "Student Fellow",
+    company: "CFDRA",
+    duration: "Dec 2024 - Present",
+    highlights: [
+      "Developed a platform to analyze and visualize consumer food prices across Bangladesh",
+      "Built AI-powered Shiny dashboards enabling natural-language insights",
+      "Designed Python and R-based scraping pipelines for continuous data collection",
+      "Published interactive visualizations using Looker Studio and Shinyapps.io"
+    ]
+  },
   {
     position: "Educational Content Developer",
     company: "Rajshahi Coaching Center",
@@ -121,4 +132,3 @@ export const experience = [
     ]
   }
 ];
-*/
