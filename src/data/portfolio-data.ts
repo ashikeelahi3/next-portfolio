@@ -47,7 +47,7 @@ export const skills = [
   },
   {
     category: "Web Development",
-    items: ["ReactJS", "Next.js", "Node.js", "TypeScript", "Tailwind CSS", "Firebase", "MongoDB"],
+    items: ["ReactJS", "Next.js", "Node.js", "TypeScript", "Tailwind CSS", "Firebase", "Clerk", "Convex", "Supabase", "DuckDB", "MongoDB"],
     color: "text-blue-600 dark:text-blue-400"
   },
   {
@@ -64,11 +64,11 @@ export const skills = [
 
 export const projects = [
   {
-    title: "Superstore Analysis Dashboard Agent",
-    tech: "Shiny · DuckDB · Gemini",
-    description: "AI powered interactive dashboard ",
-    link: "https://ashikeelahi3.shinyapps.io/superstore-dashboard/"
-  },
+  title: "Superstore Analysis Dashboard Agent",
+  tech: "R Shiny · DuckDB · Gemini",
+  description: "AI-powered interactive analytics dashboard enabling natural-language data exploration, visualization, and insights generation.",
+  link: "https://ashikeelahi3.shinyapps.io/superstore-dashboard/"
+},
   {
     title: "VegitHat Website",
     tech: "NextJS · Tailwind CSS · Clerk · Supabase ",
@@ -113,7 +113,7 @@ export const experience = [
   {
     position: "Educational Content Developer",
     company: "Rajshahi Coaching Center",
-    duration: "2022 - Present",
+    duration: "Oct 2022 - Dec 2024",
     highlights: [
       "Designed 50+ interactive PowerPoint modules for STEM subjects",
       "Automated exam paper generation using LaTeX templates",
