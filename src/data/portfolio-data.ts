@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Aspiring Data Scientist",
   photo: "/Ashik.jpg",
   contact: {
-    email: "ashikeelahi3@gmail.com",
+    email: "ashik.elahi@cfdra.com",
     phone: "+880 1714 491867",
     github: "github.com/ashikeelahi3",
     githubUrl: "https://github.com/ashikeelahi3",
@@ -20,7 +20,7 @@ export const aboutMe = `Aspiring Data Scientist with a strong foundation in stat
 
 export const education = [
   {
-    degree: "Bachelor's in Statistics (3rd Year)",
+    degree: "Bachelor's in Statistics (4th Year)",
     institution: "University of Rajshahi",
     details: "Relevant Coursework: Probability Theory, Regression Analysis, Data Mining",
     year: ""
@@ -42,7 +42,7 @@ export const education = [
 export const skills = [
   {
     category: "Data Science",
-    items: ["R", "Web-R", "SPSS", "Tidyverse", "Python", "Pandas", "NumPy"],
+    items: ["R", "Web-R", "SPSS", "Tidyverse", "Python", "Pandas", "NumPy", "Shiny"],
     color: "text-purple-600 dark:text-purple-400"
   },
   {
@@ -63,6 +63,12 @@ export const skills = [
 ];
 
 export const projects = [
+  {
+    title: "Superstore Analysis Dashboard Agent",
+    tech: "Shiny · DuckDB · Gemini",
+    description: "AI powered interactive dashboard ",
+    link: "https://ashikeelahi3.shinyapps.io/superstore-dashboard/"
+  },
   {
     title: "VegitHat Website",
     tech: "NextJS · Tailwind CSS · Clerk · Supabase ",
