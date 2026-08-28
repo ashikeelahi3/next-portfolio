@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     default: siteTitle,
     template: `%s | ${personalInfo.name}`,
   },
+  applicationName: personalInfo.name,
   description: metaDescription,
   keywords: [
     'Ashik E Elahi',
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: siteUrl,
-    siteName: `${personalInfo.name} — Portfolio`,
+    siteName: personalInfo.name,
     title: siteTitle,
     description: metaDescription,
     locale: 'en_US',
@@ -92,8 +93,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: personalInfo.name,
+    url: siteUrl,
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
         <ThemeToggle />
         <PrintButton />
