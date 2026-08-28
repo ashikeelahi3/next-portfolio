@@ -8,6 +8,11 @@ import { metaDescription, personalInfo, siteUrl } from '@/data/portfolio-data';
 
 const siteTitle = `${personalInfo.name} — ${personalInfo.title}`;
 
+// Google Search Console ownership verification token (see .env.example).
+// Paste ONLY the value inside content="..." of the tag Google shows you — not the whole <meta> tag.
+// No meta tag is rendered when this is unset.
+const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '';
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -67,6 +72,11 @@ export const metadata: Metadata = {
     icon: '/fav.png',
     apple: '/fav.png',
   },
+  // Rendered only when NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION is set:
+  // <meta name="google-site-verification" content="<token>"/>
+  ...(googleSiteVerification
+    ? { verification: { google: googleSiteVerification } }
+    : {}),
 };
 
 // themeColor belongs in the viewport export (Next.js 14+), not in metadata.
