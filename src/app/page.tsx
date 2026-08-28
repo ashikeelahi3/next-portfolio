@@ -7,14 +7,14 @@ import { Section } from '@/components/Section';
 import { EducationItem } from '@/components/Education';
 import { SkillCategory } from '@/components/Skills';
 import { Project } from '@/components/Project';
-// import { Experience } from '@/components/Experience';
+import { Experience } from '@/components/Experience';
 import { Footer } from '@/components/Footer';
 import { 
   UserCircleIcon, 
   AcademicCapIcon, 
   CodeBracketIcon, 
-  CommandLineIcon
-  // BriefcaseIcon
+  CommandLineIcon,
+  BriefcaseIcon
 } from '@/components/Icons';
 import { 
   personalInfo, 
@@ -22,7 +22,7 @@ import {
   education, 
   skills, 
   projects 
-  // experience 
+  experience
 } from '@/data/portfolio-data';
 
 export default function Home() {
@@ -86,7 +86,7 @@ export default function Home() {
           </Section>
 
           {/* Work Experience Section - Commented out */}
-          {/* <Section title="Professional Experience" icon={<BriefcaseIcon className="w-5 h-5" />}>
+          <Section title="Professional Experience" icon={<BriefcaseIcon className="w-5 h-5" />}>
             {experience.map((exp, index) => (
               <Experience
                 key={index}
@@ -96,7 +96,7 @@ export default function Home() {
                 highlights={exp.highlights}
               />
             ))}
-          </Section> */}
+          </Section> 
           
           {/* Footer */}
           <Footer personalInfo={personalInfo} />

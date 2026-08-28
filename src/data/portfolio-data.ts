@@ -21,12 +21,7 @@ export const aboutMe = `Aspiring Data Scientist with a strong foundation in stat
 // Short, search-engine-friendly summary (~150-160 chars) used for meta description / OG / Twitter tags.
 export const metaDescription = "Ashik E Elahi's portfolio; Aspiring Data Scientist skilled in R, Python and web development, building data-driven dashboards and full-stack applications.";
 
-// Public production URL of this site, used for canonical URLs, Open Graph, sitemap and robots.txt.
-// Resolution order (first match wins):
-//   1. NEXT_PUBLIC_SITE_URL — only needed if you later add a custom domain (see .env.example)
-//   2. URL — injected automatically by Netlify builds (your *.netlify.app domain)
-//   3. Hardcoded default — your current Netlify subdomain
-export const siteUrl =
+
   process.env.NEXT_PUBLIC_SITE_URL || process.env.URL || "https://ashikeelahi3.netlify.app";
 
 export const education = [
@@ -34,7 +29,7 @@ export const education = [
     degree: "Bachelor's in Statistics (4th Year)",
     institution: "University of Rajshahi",
     details: "Relevant Coursework: Probability Theory, Regression Analysis, Data Mining",
-    year: ""
+    year: "2026"
   },
   {
     degree: "Higher Secondary Certificate (HSC)",
@@ -75,53 +70,70 @@ export const skills = [
 
 export const projects = [
   {
-  title: "Superstore Analysis Dashboard Agent",
-  tech: "R Shiny · DuckDB · Gemini",
-  description: "AI-powered interactive analytics dashboard enabling natural-language data exploration, visualization, and insights generation.",
-  link: "https://ashikeelahi3.shinyapps.io/superstore-dashboard/"
-},
+    title: "Customize Data collection and Analysis Platform",
+    tech: "NextJS · Tailwind CSS · Clerk · Supabase",
+    description:
+      "A web-based platform designed to collect, and analysis data for my academic projects.",
+    link: "https://pss-pfas.pro.bd/",
+  },
+  {
+    title: "FlexAutoDock Web Application",
+    tech: "NextJS · Tailwind CSS",
+    description:
+      "Created front-end for the molecular docking platform for structural drug discovery",
+    link: "https://doi.org/10.64898/2026.08.11.744098",
+  },
+  {
+    title: "Superstore Analysis Dashboard Agent",
+    tech: "R Shiny · DuckDB · Gemini",
+    description:
+      "AI-powered interactive analytics dashboard enabling natural-language data exploration, visualization, and insights generation.",
+    link: "https://ashikeelahi3.shinyapps.io/superstore-dashboard/",
+  },
   {
     title: "VegitHat Website",
     tech: "NextJS · Tailwind CSS · Clerk · Supabase ",
-    description: "VegieHat is a digital platform designed to empower communities in Bangladesh by enabling everyday people to monitor and report real-time food and vegetable prices. ",
-    link: "https://github.com/ashikeelahi3/vegiehat-nextJS"
+    description:
+      "VegieHat is a digital platform designed to empower communities in Bangladesh by enabling everyday people to monitor and report real-time food and vegetable prices. ",
+    link: "https://vegiehat.netlify.app/",
   },
   {
     title: "VegitHat Analysis",
     tech: "HTML · CSS · JavaScript · Web R",
-    description: "VegieHat Data Analysis is a web-based tool designed to process and analyze data related to the VegieHat project. It appears to provide a user-friendly interface where users can upload files, process data, and download the results. The platform likely utilizes WebR for statistical analysis and computations.",
-    link: "https://github.com/ashikeelahi3/VegitHat-Analysis-WebR/"
+    description:
+      "VegieHat Data Analysis is a web-based tool designed to process and analyze data related to the VegieHat project. It appears to provide a user-friendly interface where users can upload files, process data, and download the results. The platform likely utilizes WebR for statistical analysis and computations.",
+    link: "https://github.com/ashikeelahi3/VegitHat-Analysis-WebR/",
   },
-  {
-    title: "Plot Generator",
-    tech: "HTML · CSS · JavaScript · Web R",
-    description: "WebR Plot Generator is a web-based tool designed to generate plots using WebR, an interactive R environment for web-based statistical computing. The platform allows users to work with data and visualize results directly in the browser.",
-    link: "https://ashikeelahi3.github.io/WebR-Plot-Generator/"
-  },
-  {
-    title: "Basic Calculator Project",
-    tech: "HTML · CSS · JavaScript",
-    description: "The Basic Calculator is a simple web-based arithmetic calculator with standard mathematical operations. It provides users with a minimalistic interface to perform basic calculations efficiently.",
-    link: "https://ashikeelahi3.github.io/basic-calculator/"
-  },
-  {
-    title: "Social Buddy Project",
-    tech: "ReactJS",
-    description: "Social Buddy is a simple social media-like platform where users can browse and interact with posts. The project prioritizes basic functionality over design, making it a foundation for future improvements.",
-    link: "https://ashik-social-buddy.netlify.app/"
-  },
-  {
-    title: "2nd Year Practicals",
-    tech: "HTML · CSS · JS · R · Python · Firebase",
-    description: "Programming 2H is an educational platform designed to help learners explore various programming topics, with a focus on R programming, Python, and Order Statistics. The site provides useful resources, including tutorials, playlists, and practical coding sessions.",
-    link: "https://ashikeelahi3.github.io/programming_2h/"
-  }
+  // {
+  //   title: "Plot Generator",
+  //   tech: "HTML · CSS · JavaScript · Web R",
+  //   description: "WebR Plot Generator is a web-based tool designed to generate plots using WebR, an interactive R environment for web-based statistical computing. The platform allows users to work with data and visualize results directly in the browser.",
+  //   link: "https://ashikeelahi3.github.io/WebR-Plot-Generator/"
+  // },
+  // {
+  //   title: "Basic Calculator Project",
+  //   tech: "HTML · CSS · JavaScript",
+  //   description: "The Basic Calculator is a simple web-based arithmetic calculator with standard mathematical operations. It provides users with a minimalistic interface to perform basic calculations efficiently.",
+  //   link: "https://ashikeelahi3.github.io/basic-calculator/"
+  // },
+  // {
+  //   title: "Social Buddy Project",
+  //   tech: "ReactJS",
+  //   description: "Social Buddy is a simple social media-like platform where users can browse and interact with posts. The project prioritizes basic functionality over design, making it a foundation for future improvements.",
+  //   link: "https://ashik-social-buddy.netlify.app/"
+  // },
+  // {
+  //   title: "2nd Year Practicals",
+  //   tech: "HTML · CSS · JS · R · Python · Firebase",
+  //   description: "Programming 2H is an educational platform designed to help learners explore various programming topics, with a focus on R programming, Python, and Order Statistics. The site provides useful resources, including tutorials, playlists, and practical coding sessions.",
+  //   link: "https://ashikeelahi3.github.io/programming_2h/"
+  // }
 ];
 
 // Uncomment if you want to add experience section
 
 export const experience = [
-{
+  {
     position: "Student Fellow",
     company: "CFDRA",
     duration: "Dec 2024 - Present",
@@ -129,8 +141,18 @@ export const experience = [
       "Developed a platform to analyze and visualize consumer food prices across Bangladesh",
       "Built AI-powered Shiny dashboards enabling natural-language insights",
       "Designed Python and R-based scraping pipelines for continuous data collection",
-      "Published interactive visualizations using Looker Studio and Shinyapps.io"
-    ]
+      "Published interactive visualizations using Looker Studio and Shinyapps.io",
+    ],
+  },
+  {
+    position: "Research Student",
+    company: "Bioinformatics Lab, Department of Statistics, RU",
+    duration: "Apr 2026 - Present",
+    highlights: [
+      "Developed a web-based platform for molecular docking and drug discovery",
+      "Implemented front-end using Next.js and Tailwind CSS",
+      "Collaborated with researchers to optimize user experience and functionality",
+    ],
   },
   {
     position: "Educational Content Developer",
@@ -139,7 +161,7 @@ export const experience = [
     highlights: [
       "Designed 50+ interactive PowerPoint modules for STEM subjects",
       "Automated exam paper generation using LaTeX templates",
-      "Implemented digital assessment system using Testmoz"
-    ]
-  }
+      "Implemented digital assessment system using Testmoz",
+    ],
+  },
 ];

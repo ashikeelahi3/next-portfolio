@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   applicationName: personalInfo.name,
   description: metaDescription,
   keywords: [
+    'Ashik',
     'Ashik E Elahi',
     'Ashik Elahi',
     'Data Scientist',
@@ -33,6 +34,9 @@ export const metadata: Metadata = {
     'React',
     'Data Visualization',
     'Portfolio',
+    'Resume',
+    'Statistics',
+    'RU'
   ],
   authors: [{ name: personalInfo.name, url: siteUrl }],
   creator: personalInfo.name,
