@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Aspiring Data Scientist",
   photo: "/Ashik.jpg",
   contact: {
-    email: "ashik.elahi@cfdra.com",
+    email: "ashikeelahi3@gmail.com",
     phone: "+880 1714 491867",
     github: "github.com/ashikeelahi3",
     githubUrl: "https://github.com/ashikeelahi3",
@@ -17,6 +17,17 @@ export const personalInfo = {
 };
 
 export const aboutMe = `Aspiring Data Scientist with a strong foundation in statistical analysis and data analysis. Passionate about transforming raw data into meaningful insights through innovative solutions. Experienced in R, Python and JavaScript, with expertise in web development, data visualization.`;
+
+// Short, search-engine-friendly summary (~150-160 chars) used for meta description / OG / Twitter tags.
+export const metaDescription = "Ashik E Elahi's portfolio; Aspiring Data Scientist skilled in R, Python and web development, building data-driven dashboards and full-stack applications.";
+
+// Public production URL of this site, used for canonical URLs, Open Graph, sitemap and robots.txt.
+// Resolution order (first match wins):
+//   1. NEXT_PUBLIC_SITE_URL — only needed if you later add a custom domain (see .env.example)
+//   2. URL — injected automatically by Netlify builds (your *.netlify.app domain)
+//   3. Hardcoded default — your current Netlify subdomain
+export const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || process.env.URL || "https://ashikeelahi3.netlify.app";
 
 export const education = [
   {

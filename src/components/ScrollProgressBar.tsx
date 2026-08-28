@@ -55,7 +55,8 @@ export default function ScrollProgressBar() {
     const updateScrollPercentage = () => {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercent = scrollTop / docHeight;
+      // Guard against division by zero when the page fits within the viewport (would show NaN%).
+      const scrollPercent = docHeight > 0 ? scrollTop / docHeight : 0;
       setScrollPercentage(Math.max(0, Math.min(100, Math.round(scrollPercent * 100))));
     };
 
